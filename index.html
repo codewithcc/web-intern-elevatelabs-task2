@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do App | Code with Cc</title>
+    <meta name="description" content="A simple, responsive To-Do List app made with vanilla JavaScript, HTML, and CSS.">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./ic_todo.svg" alt="To-do list icon" id="header-image">
+        
+        <h1>My To-Do List</h1>
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+
+        <div class="pagination" id="pagination-controls">
+            <button id="prev-btn" class="pagination-btn" title="Previous page">&laquo; Prev</button>
+            <span id="page-info"></span>
+            <button id="next-btn" class="pagination-btn" title="Next page">Next &raquo;</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
